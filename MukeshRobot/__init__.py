@@ -35,8 +35,8 @@ ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
 
-    API_ID = int(os.environ.get("API_ID", "26755570")
-    API_HASH = os.environ.get("API_HASH", "7ffa8e3f0e67c0fb8fd60f493e3a1706")
+    API_ID = int(os.environ.get("API_ID", "25357017")
+    API_HASH = os.environ.get("API_HASH", "df7ba78cede9124c83aeda70288f51ca")
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
