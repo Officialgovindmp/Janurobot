@@ -16,8 +16,8 @@ from MukeshRobot.utils.mongo import (
     update_karma,
 )
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|mukesh|thank you|gud|thankyou|love|pro)$"
-regex_downvote = r"^(\-|\-\-|\-1|👎|💔|noob|weak|fuck off|nub|gey|mf)$"
+regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|govind|thank you|gud|thankyou|love|diya)$"
+regex_downvote = r"^(\-|\-\-|\-1|👎|💔|noob|sumit|pari|kusum|nub|gey|sherni)$"
 
 
 karma_positive_group = 3
@@ -44,7 +44,7 @@ async def upvote(_, message):
         return
     if message.reply_to_message.from_user.id == OWNER_ID:
         await message.reply_text(
-            "ᴛʜᴀᴛ's ɢᴏᴏᴅ ʙᴜᴛ ʏᴏᴜ ᴋɴᴏᴡ ᴡʜᴀᴛ, ᴛʜᴀᴛ ᴩᴇʀsᴏɴ ɪs ᴍʏ ᴏᴡɴᴇʀ ᴀɴᴅ ᴇᴠᴇʀʏᴏɴᴇ ᴋɴᴏᴡs ᴛʜᴀᴛ ʜᴇ ɪs ᴀ ɢᴏᴏᴅ ᴍᴀɴ."
+            "ᴛʜᴀᴛ's ɢᴏᴏᴅ ʙᴜᴛ ʏᴏᴜ ᴋɴᴏᴡ ᴡʜᴀᴛ, ᴛʜᴀᴛ ᴩᴇʀsᴏɴ ɪs ᴍʏ ᴏᴡɴᴇʀ ᴀɴᴅ ᴇᴠᴇʀʏᴏɴᴇ ᴋɴᴏᴡs ᴛʜᴀᴛ ʜᴇ ɪs ᴀ ɢᴏᴏᴅ ᴍᴀɴ Mr govind."
         )
         return
     if message.reply_to_message.from_user.id == message.from_user.id:
