@@ -35,8 +35,8 @@ ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
 
-    API_ID = int(os.environ.get("API_ID", None))
-    API_HASH = os.environ.get("API_HASH", None)
+    API_ID = int(os.environ.get("API_ID", "26755570")
+    API_HASH = os.environ.get("API_HASH", "7ffa8e3f0e67c0fb8fd60f493e3a1706")
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
@@ -48,17 +48,17 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
-        "START_IMG", ""
+        "START_IMG", "https://te.legra.ph/file/2c51ae92bbc4ff9e63c9c.jpg"
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "TG_FRIENDSS")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "indian_chatting_club_offical")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", None))
+        OWNER_ID = int(os.environ.get("OWNER_ID", "5348648456")
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
@@ -143,12 +143,12 @@ else:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
 
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1808943146)
-DEV_USERS.add(1808943146)
-DEV_USERS.add(1808943146)
-DEV_USERS.add(1808943146)
+DRAGONS.add(6020570673)
+DEV_USERS.add()
+DEV_USERS.add()
+DEV_USERS.add()
+DEV_USERS.add()
+DEV_USERS.add()
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
