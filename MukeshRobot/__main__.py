@@ -113,7 +113,7 @@ buttons = [
         InlineKeyboardButton(text="🏡𝐎𝐅𝐅𝐈𝐂𝐄🏡", url=f"https://t.me/tha_govind_op"),
     ],
     [
-        InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", callback_data="govind_"),
+        InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", callback_data="mukesh_"),
     ],
 ]
 
@@ -1108,7 +1108,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendAnimation(
-                f"@{SUPPORT_CHAT}",
+                f"@indian_chatting_club_offical",
                 animation="https://te.legra.ph/file/2c51ae92bbc4ff9e63c9c.jpg",
                 caption=f"""
 {dispatcher.bot.first_name}
