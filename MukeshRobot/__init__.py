@@ -42,10 +42,10 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     DB_URI = os.environ.get("DATABASE_URL")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001652662001)
     INFOPIC = bool(os.environ.get("INFOPIC", "True"))
     LOAD = os.environ.get("LOAD", "").split()
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority")
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
         "START_IMG", "https://te.legra.ph/file/2c51ae92bbc4ff9e63c9c.jpg"
@@ -112,7 +112,7 @@ else:
     WORKERS = Config.WORKERS
 
     try:
-        OWNER_ID = int(Config.OWNER_ID)
+        OWNER_ID = int(Config.5348648456)
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
