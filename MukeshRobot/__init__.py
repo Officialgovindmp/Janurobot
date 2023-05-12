@@ -43,7 +43,7 @@ if ENV:
     DB_URI = os.environ.get("DATABASE_URL")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", ("-1001652662001",
-    INFOPIC = bool(os.environ.get("INFOPIC", "https://te.legra.ph/file/9241252cdf8c272ae16dc.jpg"))
+    INFOPIC = bool(os.environ.get("INFOPIC", "=INFOPIC="))
     LOAD = os.environ.get("LOAD", "").split()
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority")
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
