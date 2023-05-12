@@ -46,7 +46,7 @@ if ENV:
     INFOPIC = bool(os.environ.get("INFOPIC", "=INFOPIC=",
     LOAD = os.environ.get("LOAD", ("=LOAD=",
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "=mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority=",
-    NO_LOAD = os.environ.get("NO_LOAD", "=NO_LOAD=",
+    NO_LOAD = os.environ.get("NO_LOAD", "=NO_LOAD="),
     START_IMG = os.environ.get(
         "START_IMG", "=https://te.legra.ph/file/2c51ae92bbc4ff9e63c9c.jpg=")
     )
