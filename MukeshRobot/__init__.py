@@ -53,12 +53,12 @@ if ENV:
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "indian_chatting_club_offical")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
-    TOKEN = os.environ.get("6124885849:AAHSIMDvsgyfX_PUb0RsfNtbJ_So2BVmkSA")
+    TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
 
     try:
-        OWNER_ID = int(os.environ.get("5348648456")
+        OWNER_ID = int(os.environ.get("OWNER_ID")
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
@@ -112,7 +112,7 @@ else:
     WORKERS = Config.WORKERS
 
     try:
-        OWNER_ID = int(Config.5348648456)
+        OWNER_ID = int(Config.OWNER_ID)
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
@@ -144,7 +144,7 @@ else:
 
 
 DRAGONS.add(6020570673)
-DEV_USERS.add()
+DEV_USERS.add(OWNER_ID)
 DEV_USERS.add()
 DEV_USERS.add()
 DEV_USERS.add()
