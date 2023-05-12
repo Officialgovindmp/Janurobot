@@ -48,7 +48,7 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "=mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority=",
     NO_LOAD = os.environ.get("NO_LOAD", "=NO_LOAF=",
     START_IMG = os.environ.get(
-        "START_IMG", "=https://te.legra.ph/file/2c51ae92bbc4ff9e63c9c.jpg=",
+        "START_IMG", "=https://te.legra.ph/file/2c51ae92bbc4ff9e63c9c.jpg=")
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "indian_chatting_club_offical")
