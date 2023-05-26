@@ -409,7 +409,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="🎄𝐑𝐄𝐏𝐎🎄", 
-                            url="https://github.com/THE-VIP-BOY-OP/VIP-ROBOT",
+                            url="https://github.com/GOVIND-BOTS/Govindrobot",
                         ),
                     ],
                     [
