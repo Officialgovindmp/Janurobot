@@ -39,15 +39,15 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "5348648456")
+    DRAGONS = get_user_list("elevated_users.json", "6144340741")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
     DEV_USERS = get_user_list("elevated_users.json", "1808943146")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "1808943146")
+    DEMONS = get_user_list("elevated_users.json", "5348648456")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "1808943146")
+    TIGERS = get_user_list("elevated_users.json", "6020570673")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
-    DONATION_LINK = "https://t.me/the_vip_boy" # EG, paypal
+    DONATION_LINK = "https://t.me/tha_govind_op" # EG, paypal
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
